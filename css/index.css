@@ -19,6 +19,14 @@ body {
     left: 0;
     top: 0;
 }
+.card{
+    background:linear-gradient(315deg, #9d523c 0%, #f2a65a 74%) !important;
+    box-shadow: 0 0 0 7px #333c !important;
+}
+
+.card-body{
+    margin: 4px;
+}
 
 @keyframes fade {
     from { opacity: 1.0; }

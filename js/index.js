@@ -3,12 +3,17 @@ $(document).ready(function() {
 
     $("#wetrust\\.menu\\.inicio").on("click", function(){
         $("#wetrust\\.home").removeClass("d-none");
-        $("#wetrust\\.status").addClass("d-none");
+        $("#wetrust\\.museo").addClass("d-none");
     });
 
-    $("#wetrust\\.menu\\.estado").on("click", function(){
+    $("#wetrust\\.link\\.museo").on("click", function(){
         $("#wetrust\\.home").addClass("d-none");
-        $("#wetrust\\.status").removeClass("d-none");
+        $("#wetrust\\.museo").removeClass("d-none");
+    });
+
+    $("#wetrust\\.link\\.museo\\.tresd").on("click", function(){
+      $("#wetrust\\.home").addClass("d-none");
+      $("#wetrust\\.museo\\.tresd").removeClass("d-none");
     });
 });
 
@@ -27,9 +32,9 @@ function rand(low, high) {
 
 function createParticle(canvas) {
   const colour = {
-    r: 255,
-    g: randomNormal({ mean: 125, dev: 20 }),
-    b: 50,
+    r: 222,
+    g: randomNormal({ mean: 190, dev: 20 }),
+    b: 222,
     a: rand(0, 1),
   };
   return {
