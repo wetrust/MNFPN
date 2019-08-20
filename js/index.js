@@ -4,6 +4,7 @@ $(document).ready(function() {
     $("#wetrust\\.menu\\.inicio").on("click", function(){
         $("#wetrust\\.home").removeClass("d-none");
         $("#wetrust\\.museo").addClass("d-none");
+        $("#wetrust\\.museo\\.tresd").addClass("d-none");
     });
 
     $("#wetrust\\.link\\.museo").on("click", function(){
