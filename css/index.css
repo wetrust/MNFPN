@@ -44,3 +44,9 @@ body {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
 }
+
+.cuatroseistres{
+    background-image: url(../img/463.jpg);
+    background-repeat: no-repeat;
+    background-position: top right;
+}

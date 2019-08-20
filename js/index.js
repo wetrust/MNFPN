@@ -5,6 +5,7 @@ $(document).ready(function() {
         $("#wetrust\\.home").removeClass("d-none");
         $("#wetrust\\.museo").addClass("d-none");
         $("#wetrust\\.museo\\.tresd").addClass("d-none");
+        $("#wetrust\\.trenes").addClass("d-none");
     });
 
     $("#wetrust\\.link\\.museo").on("click", function(){
@@ -15,6 +16,12 @@ $(document).ready(function() {
     $("#wetrust\\.link\\.museo\\.tresd").on("click", function(){
       $("#wetrust\\.home").addClass("d-none");
       $("#wetrust\\.museo\\.tresd").removeClass("d-none");
+    });
+
+    $("#wetrust\\.link\\.trenes").on("click", function(){
+      $("main").animate( { scrollTop : 0 }, 200 );
+      $("#wetrust\\.home").addClass("d-none");
+      $("#wetrust\\.trenes").removeClass("d-none");
     });
 });
 

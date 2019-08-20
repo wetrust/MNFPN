@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html class="h-100">
     <head>
+        <meta charset="utf-8">
         <!--meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com https://api.passport.wetrust.cl/api/ping 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"-->
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
@@ -10,7 +11,7 @@
         <link rel="stylesheet" type="text/css" href="css/bootstrap-material-design.min.css">
         <link rel="stylesheet" type="text/css" href="css/solid.css">
         <link rel="stylesheet" type="text/css" href="css/fontawesome.css">
-        <title>WeTrust Passport</title>
+        <title>Museo Nacional Ferroviario Pablo Neruda || WeTrust</title>
     </head>
     <body class="h-100">
         <div class="bmd-layout-container bmd-drawer-f-r bmd-drawer-overlay">
@@ -38,8 +39,8 @@
                     <div class="card mt-1 mb-4">
                         <div class="card-body bg-white rounded">
                             <h5 class="card-title">Descubre el museo</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <h6 class="card-subtitle mb-2 text-muted">Único museo ferroviario de Chile</h6>
+                            <p class="card-text text-justify">Un trozo de historia detenido en el tiempo. Su valoración está presente en el corazón de muchos hombres y mujeres, que vivieron la época de esplendor de este complejo ferroviario, o en quienes desean conocer de los orígenes de nuestra joven ciudad.</p>
                             <a href="#" class="btn btn-outline-dark" id="wetrust.link.museo">Descubrir</a>
                             <a href="#" class="btn btn-outline-dark" id="wetrust.link.museo.tresd">Vista 3D</a>
                         </div>
@@ -47,9 +48,9 @@
                     <div class="card mb-4">
                         <div class="card-body bg-white rounded">
                             <h5 class="card-title">Locomotoras</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="card-link">Conocer las locomotoras</a>
+                            <h6 class="card-subtitle mb-2 text-muted">Presentes en nuestro museo</h6>
+                            <p class="card-text text-justify">La historia recuerda que a principios del Siglo XX los ferroviarios utilizaron diversas técnicas para identificar una locomotora, ya sea por los nombres con que se bautizaban, por su disposición de ejes o bien por su nomenclatura, y otras veces por sus fabricantes o nacionalidades.</p>
+                            <a href="#" class="btn btn-outline-dark" id="wetrust.link.trenes">Conocer las locomotoras</a>
                         </div>
                     </div>
                     <div class="card my-4">
@@ -57,7 +58,7 @@
                             <h5 class="card-title">Actividades</h5>
                             <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="card-link">Mirar actividades</a>
+                            <a href="#" class="btn btn-outline-dark">Mirar actividades</a>
                         </div>
                     </div>
                 </div>
@@ -78,6 +79,44 @@
                 <div class="container d-none" id="wetrust.museo.tresd">
                     <div class="embed-responsive embed-responsive-4by3 my-3">
                         <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!4v1566338768513!6m8!1m7!1sCAoSLEFGMVFpcFBXdlI1Y280bHRTUk5UNjlpNVNhb1owSW44bjVZd2RON1JZLS04!2m2!1d-38.7288628!2d-72.5703583!3f331.93436!4f0!5f0.7820865974627469" frameborder="0" style="border:0"></iframe>
+                    </div>
+                </div>
+                <div class="container d-none" id="wetrust.trenes">
+                    <div class="card my-4">
+                        <div class="card-body bg-white rounded cuatroseistres">
+                            <h5 class="card-title">Locomotora N° 463</h5>
+                            <p class="card-text text-justify">Modelo: 0-6-OT Tipo: 54 Año:1908</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <div class="card-body bg-white rounded">
+                            <h5 class="card-title">LOCOMOTORA N° 576</h5>
+                            <p class="card-text text-justify">Modelo: 2-6-0 Tipo: 57 Año: 1912</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <div class="card-body bg-white rounded">
+                            <h5 class="card-title">LOCOMOTORA N° 718</h5>
+                            <p class="card-text text-justify">Modelo: 2-8-2 Tipo: 70 Año: 1919</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <div class="card-body bg-white rounded">
+                            <h5 class="card-title">LOCOMOTORA N° 803</h5>
+                            <p class="card-text text-justify">Modelo: 4-8-2 Tipo: 80 Año: 1929</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <div class="card-body bg-white rounded">
+                            <h5 class="card-title">LOCOMOTORA N° 820</h5>
+                            <p class="card-text text-justify">Modelo: 4-8-2 Tipo: 80 Año: 1940</p>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <div class="card-body bg-white rounded">
+                            <h5 class="card-title">LOCOMOTORA N° 841</h5>
+                            <p class="card-text text-justify">Modelo: 4-8-2 Tipo: 80 Año: 1952</p>
+                        </div>
                     </div>
                 </div>
             </main>
