@@ -6,14 +6,23 @@ $(document).ready(function() {
         $("#wetrust\\.museo").addClass("d-none");
         $("#wetrust\\.museo\\.tresd").addClass("d-none");
         $("#wetrust\\.trenes").addClass("d-none");
+        $("#wetrust\\.trenes\\.cuatroseistres").addClass("d-none");
+        var player = document.getElementById("wetrust.audio.trenes.cuatroseistres");
+        if (player.paused == false){
+          player.pause();
+          player.currentTime = 0;
+        }
+        $("#wetrust\\.galeria").addClass("d-none");
     });
 
     $("#wetrust\\.link\\.museo").on("click", function(){
+        $("main").animate( { scrollTop : 0 }, 200 );
         $("#wetrust\\.home").addClass("d-none");
         $("#wetrust\\.museo").removeClass("d-none");
     });
 
     $("#wetrust\\.link\\.museo\\.tresd").on("click", function(){
+      $("main").animate( { scrollTop : 0 }, 200 );
       $("#wetrust\\.home").addClass("d-none");
       $("#wetrust\\.museo\\.tresd").removeClass("d-none");
     });
@@ -23,6 +32,18 @@ $(document).ready(function() {
       $("#wetrust\\.home").addClass("d-none");
       $("#wetrust\\.trenes").removeClass("d-none");
     });
+
+    $("#wetrust\\.link\\.trenes\\.cuatroseistres").on("click", function(){
+      $("main").animate( { scrollTop : 0 }, 200 );
+      $("#wetrust\\.trenes").addClass("d-none");
+      $("#wetrust\\.trenes\\.cuatroseistres").removeClass("d-none");
+    });
+
+    //$("#wwetrust\\.link\\.galeria").on("click", function(){
+    //  $("main").animate( { scrollTop : 0 }, 200 );
+    //  $("#wetrust\\.home").addClass("d-none");
+    //  $("#wetrust\\.galeria").removeClass("d-none");
+    //});
 });
 
 // modified version of random-normal
